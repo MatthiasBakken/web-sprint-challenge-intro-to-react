@@ -15,8 +15,20 @@ body {
 .character_container {
 	margin: 20px;
 	width: 30vw;
-	height: 30vh;
 	overflow: scroll;
 	background-color: white;
 	opacity: 75%;
+}
+.character_show {
+	max-height: 0;
+	overflow: hidden;
+	/* setting up my transition */
+	-webkit-transition: max-height 0.8s;
+	-moz-transition: max-height 0.8s;
+	transition: max-height 0.8s;
+}
+
+.character_container:hover .character_show {
+	max-height: 30vh;
+	overflow: scroll;
 }
