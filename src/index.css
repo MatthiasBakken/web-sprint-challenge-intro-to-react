@@ -1,7 +1,22 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background-image: url('./images/sw-bg.jpg');
-  background-size: cover;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-image: url("./images/sw-bg.jpg");
+	background-size: cover;
+}
+.main-container {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100vw;
+}
+.character_container {
+	margin: 20px;
+	width: 30vw;
+	height: 30vh;
+	overflow: scroll;
+	background-color: white;
+	opacity: 75%;
 }
